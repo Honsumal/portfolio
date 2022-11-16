@@ -5,14 +5,46 @@ export default function Resume() {
     <div>
       <br></br>
       <h1 className='centered'>Resume</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+      <h3>Download my resume using the following link</h3>
+      <a href = {require('../../files/Alastair Lee\'s Resume - Webdev.pdf')} className='resume'>Resume</a>
+
+      <h3>Full List of Technical Skills</h3>
+      <h4>Front End Development</h4>
+        <ul>
+          <li>JavaScript ES6+</li>
+          <li>CSS 3</li>
+          <li>HTML 5</li>
+          <li>JQuery</li>
+          <li>BootStrap</li>
+          <li>Materialize</li>
+          <li>HandleBars</li>
+          <li>React</li>
+          <li>Python 3</li>
+        </ul>
+      <h4>Back End Development</h4>
+        <ul>
+          <li>Node</li>
+          <li>Express</li>
+          <li>SQL</li>
+          <li>MySQL</li>
+          <li>NoSQL</li>
+          <li>MongoDB</li>
+        </ul>
+      <h4>Other Skills</h4>
+        <ul>
+          <li>ANSYS Fluent</li>
+          <li>Mathematica</li>
+          <li>LabView</li>
+          <li>AutoCAD</li>
+          <li>Space Claim</li>
+          <li>Design Modeler</li>
+          <li>Siemens NX</li>
+        </ul>
+      <h4>Spoken Languages</h4>
+        <ul>
+          <li>Cantonese</li>
+          <li>Mandarin</li>
+        </ul>
     </div>
   );
 }

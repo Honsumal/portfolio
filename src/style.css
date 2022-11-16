@@ -21,7 +21,6 @@ header{
 
 body {
     background-color: var(--char);
-    color: var(--char);
 }
 
 /* Page Header */
@@ -40,10 +39,11 @@ h2 {
 
 /* Project Labels */
 h3 {
+    margin-top: 10px;
     margin-bottom: 25px;
     font-size: 16px;
     position: relative;
-    text-align: center;
+    color: var(--swan);
 }
 
 /* Navigation Links */
@@ -69,6 +69,7 @@ nav a {
 li {
     display: inline-block;
     margin-left: 25px; 
+    color: var(--swan);
 }
 
 a {
@@ -103,8 +104,13 @@ p {
     color: var(--swan)
 }
 
+.resume {
+    font-size: 20px;
+
+}
+
 .foot {
-    margin-top: 150px;
+    margin-top: 70px;
     margin-left: -25px;
 }
 
@@ -169,20 +175,6 @@ p {
     box-shadow: inset 0px 0px 8px var(--char), 0 0 15px var(--char);
 }
 
-/* Resume Button */
-button {
-    margin-top: 10px;
-    align-items: center;
-    height:50px;
-    width: 100px;
-    background-color: var(--ultra);
-    color: var(--swan);
-}
-
-button:hover {
-    box-shadow: inset 0px 0px 8px var(--char), 0 0 15px var(--char);
-    color: var(--givry);
-}
   
 /* Media Queries to change rows depending on screen size*/
 
