@@ -3,15 +3,14 @@ import React from 'react';
 export default function About() {
   return (
     <div>
+      <br></br>
       <h1 className='centered'>About Me</h1>
+
+      <img src={require('../../images/Self.jpg')} alt = "self" class = "self"></img>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+        Full Stack Web Developer with a background in Chemical Engineering. Currently pursuing a certificate in Full Stack Development from the Universeity of Toronto, with skills in JavaScript, MySQL, MongoDB, and Python. Known for being able to work flexibly as a team member or team leader in a fast-paced group. Looking to grow as a programmer by building applications that can help in people's everyday lives. Looking to join a compnay to leverage my current skills, grow my repretoire, and become a valuable asset.
       </p>
+
     </div>
   );
 }

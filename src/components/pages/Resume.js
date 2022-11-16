@@ -3,6 +3,7 @@ import React from 'react';
 export default function Resume() {
   return (
     <div>
+      <br></br>
       <h1 className='centered'>Resume</h1>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
