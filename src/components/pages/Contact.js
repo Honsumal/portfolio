@@ -1,23 +1,106 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { validateEmail } from '../../utils/helpers';
+import styled from "styled-components"
 
-export default function Contact() {
+const Input = styled.input`
+  font-size: 1em;
+  border-radius: 3px;
+  margin: 1em;
+  padding: ${props => props.size};
+  overflow-wrap: "break-word"
+`;
+
+const MessageInput = styled.textarea`
+  width: 50%
+`
+
+function Contact() {
+  const [email, setEmail] = useState('');
+  const [title, setTitle] = useState('');
+  const [message, setMessage] = useState('');
+  const [errMessage, setErrMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'title') {
+      setTitle(inputValue);
+    } else if (inputType === 'message') {
+      setMessage(inputValue)
+    }
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    if (!validateEmail(email)) {
+      setErrMessage('Your email address is invalid');
+      return;
+    } else if (!title) {
+      setErrMessage('Please enter a title for your email')
+      return;
+    } else if (!message) {
+      setErrMessage('Please enter a message in your email')
+      return;
+    } 
+
+    // Handle Email Send
+
+    setEmail('');
+    setTitle('');
+    setMessage('');
+    alert(`Email has been sent!`);
+  }
+
   return (
     <div>
       <br></br>
       <h1 className='centered'>Contact Me</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <form className="form">
+        <h4>Email</h4>
+        <Input
+          value={email}
+          name="email"
+          onChange={handleInputChange}
+          type="email"
+          placeholder="email"
+          size = '0.5em'
+        />
+        <h4>Email Title</h4>
+        <Input
+          value={title}
+          name="title"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="email title"
+          size = '0.5em'
+        />
+        <h4>Email Message</h4>
+        <MessageInput
+          value = {message}
+          name = 'message'
+          onChange={handleInputChange}
+          type="message"
+          placeholder = "email message"
+          rows = {5}
+          size = '5em'
+        />
+        <br></br>
+        <button onClick={handleFormSubmit}>
+          Send
+        </button>
+      </form>
+      {errMessage && (
+        <div>
+          <p className="error-text">{errMessage}</p>
+        </div>
+      )}
     </div>
   );
 }
+
+export default Contact

@@ -11,39 +11,39 @@ export default function Resume() {
       <h3>Full List of Technical Skills</h3>
       <h4>Front End Development</h4>
         <ul>
-          <li>JavaScript ES6+</li>
-          <li>CSS 3</li>
-          <li>HTML 5</li>
-          <li>JQuery</li>
-          <li>BootStrap</li>
-          <li>Materialize</li>
-          <li>HandleBars</li>
-          <li>React</li>
-          <li>Python 3</li>
+          <li style={{display: 'block'}}>JavaScript ES6+</li>
+          <li style={{display: 'block'}}>CSS 3</li>
+          <li style={{display: 'block'}}>HTML 5</li>
+          <li style={{display: 'block'}}>JQuery</li>
+          <li style={{display: 'block'}}>BootStrap</li>
+          <li style={{display: 'block'}}>Materialize</li>
+          <li style={{display: 'block'}}>HandleBars</li>
+          <li style={{display: 'block'}}>React</li>
+          <li style={{display: 'block'}}>Python 3</li>
         </ul>
       <h4>Back End Development</h4>
         <ul>
-          <li>Node</li>
-          <li>Express</li>
-          <li>SQL</li>
-          <li>MySQL</li>
-          <li>NoSQL</li>
-          <li>MongoDB</li>
+          <li style={{display: 'block'}}>Node</li>
+          <li style={{display: 'block'}}>Express</li>
+          <li style={{display: 'block'}}>SQL</li>
+          <li style={{display: 'block'}}>MySQL</li>
+          <li style={{display: 'block'}}>NoSQL</li>
+          <li style={{display: 'block'}}>MongoDB</li>
         </ul>
       <h4>Other Skills</h4>
         <ul>
-          <li>ANSYS Fluent</li>
-          <li>Mathematica</li>
-          <li>LabView</li>
-          <li>AutoCAD</li>
-          <li>Space Claim</li>
-          <li>Design Modeler</li>
-          <li>Siemens NX</li>
+          <li style={{display: 'block'}}>ANSYS Fluent</li>
+          <li style={{display: 'block'}}>Mathematica</li>
+          <li style={{display: 'block'}}>LabView</li>
+          <li style={{display: 'block'}}>AutoCAD</li>
+          <li style={{display: 'block'}}>Space Claim</li>
+          <li style={{display: 'block'}}>Design Modeler</li>
+          <li style={{display: 'block'}}>Siemens NX</li>
         </ul>
       <h4>Spoken Languages</h4>
         <ul>
-          <li>Cantonese</li>
-          <li>Mandarin</li>
+          <li style={{display: 'block'}}>Cantonese</li>
+          <li style={{display: 'block'}}>Mandarin</li>
         </ul>
     </div>
   );
