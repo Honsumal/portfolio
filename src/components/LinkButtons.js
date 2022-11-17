@@ -18,7 +18,7 @@ function LinkButtons() {
 
                 <li>
                     <a href='https://stackoverflow.com/users/20526502/honsumal'>
-                        StackOverflow
+                        Stack Overflow
                     </a>
                 </li>        
             </ul>
