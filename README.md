@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Description
-
+This application is a portfolio showcasing my projects. On loading, users are directed to an 'About Me' page, which provides a summary of myself. The 'Projects' page showcaseseveral of my most recent projects, including links to the deployed site and their respective github repositories. The 'Contact' page includes a fully-functioning system using EmailJS that allows users to send me a message by including their name, email, and message. Lastly, the 'Resume' page includes a download of my resume, as well as a full list of proficiencies that I have.
 
 
 ## Table of Contents
