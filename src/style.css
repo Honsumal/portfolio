@@ -12,13 +12,6 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header{    
-    padding: 20px 10px 20px 0px;
-    background-color: var(--char);
-    width: 100%;
-
-}
-
 body {
     background-color: var(--char);
 }
@@ -51,19 +44,6 @@ h4 {
     font-size: 16px;
     padding: 6px 8px 6px ;
     color: var(--swan);
-}
-
-nav {
-    /* padding-top: 5px; */
-
-    float: right;
-    font-size: 20px;
-
-}
-
-nav a {
-    color: var(--swan);
-    font-size: 12px;
 }
 
 li {
@@ -121,26 +101,17 @@ textarea {
 button {
     position: relative;
     margin-top: 25px;
-    margin-left: 50%;
-    margin-right: 50%;
+    margin-left: 48%;
 }
 
 /* Image Rules */
 .self {
-    height: 200px;
-    float:right;
-    margin-left: 25px;
-}
-
-.big {
-    width: 350px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
+    height: 300px;
+    margin-left: 23%    
 }
   
 .norm {
-    width: 200px;
+    width: 400px;
     margin-bottom: 25px;
     border-radius: 10px;
 }
@@ -149,43 +120,26 @@ button {
 .row {
 
     display: flex;
-
     flex-wrap: wrap;
     margin-top: 2%;
 }
   
-.card {
+.proj-box{
 
     flex: 1 0 100%;
     padding: 10px;
     text-align: center;
 }
   
-/* Sidebar Rules */
-.sidenav {
-    height: 100%; 
-    width: 110px; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0px; 
-    left: 0;
-    background-color: var(--char);
-    overflow-x: hidden;
-    padding-top: 65px;
-}
-
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    font-size: 16px;
-    color: var(--swan);
-    display: block;
-}
 
 /* Creates a glow around hovered project */
-#work img:hover{
-    box-shadow: inset 0px 0px 8px var(--char), 0 0 15px var(--char);
+.proj-box img:hover{
+    box-shadow: inset 0px 0px 8px var(--givry), 0 0 15px var(--givry);
 }
 
+.proj-box h3:hover {
+    box-shadow: inset 0px 0px 8px var(--givry), 0 0 15px var(--givry);
+}
   
 /* Media Queries to change rows depending on screen size*/
 
@@ -193,26 +147,24 @@ button {
     h1,
     h2,
     h3,
-    h4,
-    .sidenav a {
+    h4 {
         font-size: 24px;
     }
-
-    .sidenav {
-        width: 160px;
-    }
-
 
     nav {
         padding-top: 15px;
         margin-top:0px;
     }
 
-    .card{
+    .self {
+        margin-left: 35%;
+    }
+
+    .proj-box{
       flex: 0 0 50%;
       max-width: 50%;
 }
-    .card:last-child {
+    .proj-box:last-child {
       flex-grow: 1;
     }
   }
@@ -225,8 +177,12 @@ button {
     h1 {
         font-size: 36px;
     }
+
+    .self {
+        margin-left: 42%;
+    }
     
-    .card{
+    .proj-box{
       flex: 0 0 33%;
       max-width: 33%;
     }

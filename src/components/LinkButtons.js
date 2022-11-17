@@ -14,6 +14,12 @@ function LinkButtons() {
                     <a href='https://www.linkedin.com/in/hon-sum-alastair-lee/'>
                         LinkedIn
                     </a>
+                </li>
+
+                <li>
+                    <a href='https://stackoverflow.com/users/20526502/honsumal'>
+                        StackOverflow
+                    </a>
                 </li>        
             </ul>
         </div>
