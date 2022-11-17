@@ -5,21 +5,41 @@ export default function Projects() {
     <div>
       <br></br>
       <h1 className='centered'>My Projects</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+      <br></br>
+
+      <p>Here is a list of my most recent projects. Click the picture above each label to be directed to the deployed application (if applicable). Click on the label to be directed to the application's Github repository.</p>
+
+      <div className = "row">
+            <figure className = "card">
+                <a href = "https://github.com/Honsumal/social-network-api"><img src="../../images/socnet-api.png" alt="Social network api" className = "norm"/></a>
+                <a href = "https://github.com/Honsumal/social-network-api"><h3>Social Networking API</h3></a>
+            </figure>
+            
+            <figure className = "card">
+                <a href = "https://the-lending-station.herokuapp.com/"><img src='../../images/the-lending-station' alt="the lending station" className = "norm"/></a>
+                <a href = "https://github.com/sashdc/the-lending-station"><h3>The Lending Station</h3></a>
+            </figure>
+            
+            <figure className = "card">
+                <a href = "https://techjack.herokuapp.com/"><img src="../../images/tech-jack.png" alt="tech jack" className = "norm"/></a>
+                <a href = "https://github.com/Honsumal/tech-blog"><h3>Tech Blog</h3></a>
+            </figure>
+
+            <figure className = "card">
+                <a href = "https://github.com/Honsumal/employee-tracker"><img src="../../images/employee-tracker.png" alt="employee tracker" className = "norm"/></a>
+                <a href = "https://github.com/Honsumal/employee-tracker"><h3>Employee Tracker</h3></a>
+            </figure>
+
+            <figure className = "card">
+                <a href = "https://github.com/Honsumal/team-profile-generator"><img src="../../images/team-profile-builder.png" alt="team profile generator" className = "norm"/></a>
+                <a href = "https://github.com/Honsumal/team-profile-generator"><h3>Team Profile Generator</h3></a>
+            </figure>
+
+            <figure className = "card">
+                <a href = "https://honsumal.github.io/news-headline-aggregator/"><img src="../../images/news-aggregator.png" alt="news aggregator" className = "norm"/></a>
+                <a href = "https://github.com/Honsumal/news-headline-aggregator"><h3>News Aggregator</h3></a>
+            </figure>
+          </div>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 import styled from "styled-components"
+import emailjs from '@emailjs/browser'
 
 const Input = styled.input`
   font-size: 1em;
@@ -16,7 +17,7 @@ const MessageInput = styled.textarea`
 
 function Contact() {
   const [email, setEmail] = useState('');
-  const [title, setTitle] = useState('');
+  const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [errMessage, setErrMessage] = useState('');
 
@@ -27,8 +28,8 @@ function Contact() {
 
     if (inputType === 'email') {
       setEmail(inputValue);
-    } else if (inputType === 'title') {
-      setTitle(inputValue);
+    } else if (inputType === 'name') {
+      setName(inputValue);
     } else if (inputType === 'message') {
       setMessage(inputValue)
     }
@@ -40,20 +41,30 @@ function Contact() {
     if (!validateEmail(email)) {
       setErrMessage('Your email address is invalid');
       return;
-    } else if (!title) {
-      setErrMessage('Please enter a title for your email')
+    } else if (!name) {
+      setErrMessage('Please enter your name')
       return;
     } else if (!message) {
       setErrMessage('Please enter a message in your email')
       return;
     } 
 
-    // Handle Email Send
+    const fullMessage = message.concat(' Reply to: ', email)
 
-    setEmail('');
-    setTitle('');
-    setMessage('');
-    alert(`Email has been sent!`);
+    // Handle Email Send
+    emailjs.send("service_n9ljrsq","template_cqlqoql",{
+      from_name: name,
+      message: fullMessage,
+      }).then((result) => {
+        console.log(result.text)
+        setEmail('');
+        setName('');
+        setMessage('');
+        alert(`Email has been sent!`)
+      }, (error) => {
+        console.log(error.text)
+        alert(`Something went wrong, please try again`)
+      });
   }
 
   return (
@@ -67,16 +78,16 @@ function Contact() {
           name="email"
           onChange={handleInputChange}
           type="email"
-          placeholder="email"
+          placeholder="Your Email"
           size = '0.5em'
         />
-        <h4>Email Title</h4>
+        <h4>Your Name</h4>
         <Input
-          value={title}
-          name="title"
+          value={name}
+          name="name"
           onChange={handleInputChange}
           type="text"
-          placeholder="email title"
+          placeholder="Your Name"
           size = '0.5em'
         />
         <h4>Email Message</h4>
@@ -85,11 +96,11 @@ function Contact() {
           name = 'message'
           onChange={handleInputChange}
           type="message"
-          placeholder = "email message"
+          placeholder = "Email Message"
           rows = {5}
           size = '5em'
         />
-        <br></br>
+
         <button onClick={handleFormSubmit}>
           Send
         </button>
@@ -99,6 +110,11 @@ function Contact() {
           <p className="error-text">{errMessage}</p>
         </div>
       )}
+      <script type="text/javascript">
+        (function(){
+            emailjs.init("4ZHfidS7IRAPGItnw")
+        })();
+      </script>
     </div>
   );
 }
