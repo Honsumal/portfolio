@@ -71,6 +71,7 @@ function Contact() {
     <div>
       <br></br>
       <h1 className='centered'>Contact Me</h1>
+      <p>Please fill in the form below to contact me. Alternatively, click the link in the footer to be directed to your email app of choice.</p>
       <form className="form">
         <h4>Email</h4>
         <Input
