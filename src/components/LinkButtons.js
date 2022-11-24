@@ -1,5 +1,4 @@
 import React from "react";
-import Mailto from "react-mailto"
 
 function LinkButtons() {
     return (
@@ -24,9 +23,9 @@ function LinkButtons() {
                 </li>
 
                 <li>
-                <Mailto email="14leealastair@gmail.com" obfuscate={true}>
+                    <a href="mailto:14leealastair@gmail.com">
                     Email me!
-                </Mailto>
+                    </a>
                 </li>          
             </ul>
         </div>
