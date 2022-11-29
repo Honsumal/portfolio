@@ -12,7 +12,7 @@ export default function Projects() {
       <div className = "row">
             <figure className = "proj-box">
                 <a href = "http://swiftbank.herokuapp.com/"><img src={require("../../images/swift.png")} alt="Swift Bank" className = "norm"/></a>
-                <a href = "https://github.com/pav1593/swift-bank"><h3>Social Networking API</h3></a>
+                <a href = "https://github.com/pav1593/swift-bank"><h3>Swift Bank</h3></a>
                 <p>This application is a sample web application for a online bank that allows users to view their accounts, make transactions, and open accounts. Uses: Materials UI, MongoDB, ExpressJS, REACT, NodeJS, Apollo GraphQL, JWT Webtoken</p>
             </figure>
             <figure className = "proj-box">
