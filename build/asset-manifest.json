@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.57199162.css",
-    "main.js": "/portfolio/static/js/main.ff98c3b3.js",
+    "main.js": "/portfolio/static/js/main.4ed41be0.js",
     "static/media/Self.jpg": "/portfolio/static/media/Self.7e384e7558ddb8305411.jpg",
     "static/media/the-lending-station.png": "/portfolio/static/media/the-lending-station.2727ea28c02c8559a3da.png",
     "static/media/news-aggregator.png": "/portfolio/static/media/news-aggregator.cf91be9e86044097800f.png",
@@ -12,10 +12,10 @@
     "static/media/team-profile-builder.png": "/portfolio/static/media/team-profile-builder.0bb41fb8f8c8e8eca4e4.png",
     "index.html": "/portfolio/index.html",
     "main.57199162.css.map": "/portfolio/static/css/main.57199162.css.map",
-    "main.ff98c3b3.js.map": "/portfolio/static/js/main.ff98c3b3.js.map"
+    "main.4ed41be0.js.map": "/portfolio/static/js/main.4ed41be0.js.map"
   },
   "entrypoints": [
     "static/css/main.57199162.css",
-    "static/js/main.ff98c3b3.js"
+    "static/js/main.4ed41be0.js"
   ]
 }
