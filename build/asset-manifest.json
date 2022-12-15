@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.57199162.css",
-    "main.js": "/portfolio/static/js/main.0a3d6f91.js",
-    "static/media/Self.jpg": "/portfolio/static/media/Self.7e384e7558ddb8305411.jpg",
-    "static/media/the-lending-station.png": "/portfolio/static/media/the-lending-station.2727ea28c02c8559a3da.png",
-    "static/media/news-aggregator.png": "/portfolio/static/media/news-aggregator.cf91be9e86044097800f.png",
-    "static/media/socnet-api.png": "/portfolio/static/media/socnet-api.659e5c9ef65298eb8fb3.png",
-    "static/media/Alastair Lee's Resume - Webdev.pdf": "/portfolio/static/media/Alastair Lee's Resume - Webdev.c3e7703e7f459636a4fa.pdf",
-    "static/media/employee-tracker.png": "/portfolio/static/media/employee-tracker.61cb830b24af5986a848.png",
-    "static/media/tech-jack.png": "/portfolio/static/media/tech-jack.acdaee0fd22a1c66ddcd.png",
-    "static/media/swift.png": "/portfolio/static/media/swift.6440db3897bc2f5d84c5.png",
-    "static/media/team-profile-builder.png": "/portfolio/static/media/team-profile-builder.0bb41fb8f8c8e8eca4e4.png",
-    "index.html": "/portfolio/index.html",
-    "main.57199162.css.map": "/portfolio/static/css/main.57199162.css.map",
-    "main.0a3d6f91.js.map": "/portfolio/static/js/main.0a3d6f91.js.map"
+    "main.css": "/basic-react-portfolio/static/css/main.57199162.css",
+    "main.js": "/basic-react-portfolio/static/js/main.ec00bd5d.js",
+    "static/media/Self.jpg": "/basic-react-portfolio/static/media/Self.7e384e7558ddb8305411.jpg",
+    "static/media/the-lending-station.png": "/basic-react-portfolio/static/media/the-lending-station.2727ea28c02c8559a3da.png",
+    "static/media/news-aggregator.png": "/basic-react-portfolio/static/media/news-aggregator.cf91be9e86044097800f.png",
+    "static/media/socnet-api.png": "/basic-react-portfolio/static/media/socnet-api.659e5c9ef65298eb8fb3.png",
+    "static/media/Alastair Lee's Resume - Webdev.pdf": "/basic-react-portfolio/static/media/Alastair Lee's Resume - Webdev.c3e7703e7f459636a4fa.pdf",
+    "static/media/employee-tracker.png": "/basic-react-portfolio/static/media/employee-tracker.61cb830b24af5986a848.png",
+    "static/media/tech-jack.png": "/basic-react-portfolio/static/media/tech-jack.acdaee0fd22a1c66ddcd.png",
+    "static/media/swift.png": "/basic-react-portfolio/static/media/swift.6440db3897bc2f5d84c5.png",
+    "static/media/team-profile-builder.png": "/basic-react-portfolio/static/media/team-profile-builder.0bb41fb8f8c8e8eca4e4.png",
+    "index.html": "/basic-react-portfolio/index.html",
+    "main.57199162.css.map": "/basic-react-portfolio/static/css/main.57199162.css.map",
+    "main.ec00bd5d.js.map": "/basic-react-portfolio/static/js/main.ec00bd5d.js.map"
   },
   "entrypoints": [
     "static/css/main.57199162.css",
-    "static/js/main.0a3d6f91.js"
+    "static/js/main.ec00bd5d.js"
   ]
 }
