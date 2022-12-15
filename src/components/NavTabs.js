@@ -1,4 +1,8 @@
 import React from 'react';
+import {AiFillHome} from 'react-icons/ai'
+import {GrProjects} from 'react-icons/gr'
+import {IoIosContact} from 'react-icons/io'
+
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (

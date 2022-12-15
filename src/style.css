@@ -95,7 +95,7 @@ textarea {
 }
 
 .foot {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: -25px;
 }
 
@@ -133,9 +133,93 @@ button {
 }
 
 /* Footer button Rules */
+.html,
+.css,
+.js,
+.jqry,
+.btsp,
+.mtcs,
+.hdbs,
+.react,
+.matui,
+.pyth,
+.expr,
+.node,
+.mysql,
+.godb,
+.ansys,
+.math,
+.labv {
+    font-size: 60px;
+    color: var(--jun)
+}
 
-#html:hover {
+.html:hover {
+    color: orange
+}
+
+.css:hover {
     color: blue
+}
+
+.js:hover {
+    color: white
+}
+
+.jqry:hover {
+    color: lightblue
+}
+
+.btsp:hover {
+    color:purple
+}
+
+.mtcs:hover {
+    color:#eb7077 
+}
+
+.hdbs:hover {
+    color:#302116
+}
+
+.react:hover {
+    color:#5ed3f3
+}
+
+.matui:hover {
+    color:#0978e6
+}
+
+.pyth:hover {
+    color:#f7d54c
+}
+
+.expr:hover {
+    color:#ebd81c
+}
+
+.node:hover {
+    color:#8bc238
+}
+
+.mysql:hover {
+    color:#005e86
+}
+
+.godb:hover {
+    color:#023430
+}
+
+.ansys:hover {
+    color:#f4ae25
+}
+
+.math:hover {
+    color:#d6272b
+}
+
+.labv:hover {
+    color:#f7d700
 }
 
 /* Creates a glow around hovered project */
