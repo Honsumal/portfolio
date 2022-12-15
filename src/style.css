@@ -132,6 +132,15 @@ button {
     text-align: center;
 }
 
+/* Nav button Rules */
+.home,
+.proj,
+.abt,
+.cont {
+    font-size: 25px;
+    color: var(--chi)
+}
+
 /* Footer button Rules */
 .html,
 .css,

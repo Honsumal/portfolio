@@ -4,7 +4,7 @@ import LinkButtons from './LinkButtons';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import Resume from './pages/Resume';
+import Home from './pages/Home'
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -16,10 +16,10 @@ export default function PortfolioContainer() {
         return <Projects />;
       case "Contact" :
         return <Contact />;
-      case "Resume": 
-        return <Resume />
-      default:
+      case "About": 
         return <About />
+      default:
+        return <Home />
     }
   };
 

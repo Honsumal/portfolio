@@ -1,53 +1,56 @@
 import React from 'react';
-import {AiFillHome} from 'react-icons/ai'
-import {GrProjects} from 'react-icons/gr'
+import {AiFillHome, AiFillProject} from 'react-icons/ai'
 import {IoIosContact} from 'react-icons/io'
+import {MdEmail} from 'react-icons/md'
 
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-tabs">
-      <li><h1>Alastair Lee</h1></li>
-      <li className="nav-item">
+        <li><h1>Alastair Lee</h1></li>
+        <li className="nav-item">
         <a
-          href="#about"
-          onClick={() => handlePageChange('About')}
+          href="#home"
 
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+          onClick={() => handlePageChange('Home')}
+          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
         >
-          About
+          <AiFillHome className = 'home'/>
         </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#projects"
-          onClick={() => handlePageChange('Projects')}
+        </li>
+      
+        <li className="nav-item">
+            <a
+            href="#projects"
+            onClick={() => handlePageChange('Projects')}
 
-          className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
-        >
-          Projects
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#contact"
+            className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
+            >
+            <AiFillProject className = 'proj'/>
+            </a>
+        </li>
 
-          onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-        >
-          Contact
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#resume"
+        <li className="nav-item">
+            <a
+            href="#about"
+            onClick={() => handlePageChange('About')}
 
-          onClick={() => handlePageChange('Resume')}
-          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-        >
-          Resume
-        </a>
-      </li>
+            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+            >
+            <IoIosContact className = 'abt'/>
+            </a>
+        </li>
+        <li className="nav-item">
+            <a
+            href="#contact"
+
+            onClick={() => handlePageChange('Contact')}
+            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+            >
+            <MdEmail className='cont'/>
+            </a>
+        </li>
+
     </ul>
   );
 }
