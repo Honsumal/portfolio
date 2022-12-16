@@ -31,7 +31,7 @@ export default function PortfolioContainer() {
       <div>
         {renderPage()}
       </div>
-      <LinkButtons />
+      <LinkButtons/>
     </div>
   );
 }

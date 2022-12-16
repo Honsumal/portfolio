@@ -1,50 +1,84 @@
-import React from 'react';
+import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import Card from '@mui/material/Card';
+import CardHeader from '@mui/material/CardHeader';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
+import CardActions from '@mui/material/CardActions';
+import Collapse from '@mui/material/Collapse';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+//import { red } from '@mui/material/colors';
+import { BsChevronDown} from 'react-icons/bs';
 
-export default function Projects() {
+const ExpandMore = styled((props) => {
+  const { expand, ...other } = props;
+  return <IconButton {...other} />;
+})(({ theme, expand }) => ({
+  transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
+  marginLeft: 'auto',
+  transition: theme.transitions.create('transform', {
+    duration: theme.transitions.duration.shortest,
+  }),
+}));
+
+export default function RecipeReviewCard() {
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
+
   return (
-    <div className = 'container'>
-      <br></br>
-      <h1 className='centered'>My Projects</h1>
-      <br></br>
+    <div className = 'container banana'>
+        <br></br>
+        <h1 className='centered'>My Projects</h1>
+        <br></br>
 
-      <p>Here is a list of my most recent projects. Click the picture above each label to be directed to the deployed application (if applicable). Click on the label to be directed to the application's Github repository.</p>
+        <p>Here is a list of my most recent projects. Click the picture above each label to be directed to the deployed application (if applicable). Click on the label to be directed to the application's Github repository.</p>
 
-      <div className = "row">
-            <figure className = "proj-box">
-                <a href = "http://swiftbank.herokuapp.com/"><img src={require("../../images/swift.png")} alt="Swift Bank" className = "norm"/></a>
-                <a href = "https://github.com/pav1593/swift-bank"><h3>Swift Bank</h3></a>
-                <p>This application is a sample web application for a online bank that allows users to view their accounts, make transactions, and open accounts. Uses: Materials UI, MongoDB, ExpressJS, REACT, NodeJS, Apollo GraphQL, JWT Webtoken</p>
-            </figure>
-            <figure className = "proj-box">
-                <a href = "https://github.com/Honsumal/social-network-api"><img src={require("../../images/socnet-api.png")} alt="Social network api" className = "norm"/></a>
-                <a href = "https://github.com/Honsumal/social-network-api"><h3>Social Networking API</h3></a>
-                <p>This is a social networking API designed for an easy-to-navigate system between users, their thoughts, and reactions. Uses: JavaScript, NodeJS, ExpressJS, MongoDB</p>
-            </figure>
-            
-            <figure className = "proj-box">
-                <a href = "https://the-lending-station.herokuapp.com/"><img src={require('../../images/the-lending-station.png')} alt="the lending station" className = "norm"/></a>
-                <a href = "https://github.com/sashdc/the-lending-station"><h3>The Lending Station</h3></a>
-                <p>This application is a database for a library that allows librarians to keep track of, add, update, and delete books, users, and reviews from their database. Uses: JavaScript, NodeJS, ExpressJS, SQL</p>
-            </figure>
-
-            <figure className = "proj-box">
-                <a href = "https://github.com/Honsumal/employee-tracker"><img src={require("../../images/employee-tracker.png")} alt="employee tracker" className = "norm"/></a>
-                <a href = "https://github.com/Honsumal/employee-tracker"><h3>Employee Tracker</h3></a>
-                <p>This application is an employee tracker that runs through the CLI and uses user input to create a database that stores all the important information about each employee, role, and department in a company. Uses: JavaScript, NodeJS, SQL</p>
-            </figure>
-
-            <figure className = "proj-box">
-                <a href = "https://github.com/Honsumal/team-profile-generator"><img src={require("../../images/team-profile-builder.png")} alt="team profile generator" className = "norm"/></a>
-                <a href = "https://github.com/Honsumal/team-profile-generator"><h3>Team Profile Generator</h3></a>
-                <p>This application is a team profile generator that works from the command line. Using user input, it creates short profiles of employees with their name, ID, and email.Uses: JavaScript, NodeJS</p>
-            </figure>
-
-            <figure className = "proj-box">
-                <a href = "https://honsumal.github.io/news-headline-aggregator/"><img src={require("../../images/news-aggregator.png")} alt="news aggregator" className = "norm"/></a>
-                <a href = "https://github.com/Honsumal/news-headline-aggregator"><h3>News Aggregator</h3></a>
-                <p>This application aggregates top news stories and statistical metrics from StatsCAN based on user query. Uses: HTML, CSS, JavaScript, jQuery</p>
-            </figure>
-          </div>
+        <Card sx={{ maxWidth: 345 }} style = {{backgroundColor: "#a3320b"}}>
+        <CardHeader
+            title="Swift Bank"
+        />
+        <CardMedia
+            component="img"
+            height="194"
+            width="300"
+            image={require("../../images/swift.png")}
+            alt="swiftbank landing"
+            sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
+        />
+        <CardContent >
+            <Typography variant="body2" color="text.secondary">
+                Web application for a online bank
+            </Typography>
+        </CardContent>
+        <CardActions disableSpacing>
+            <ExpandMore
+            expand={expanded}
+            onClick={handleExpandClick}
+            aria-expanded={expanded}
+            aria-label="show more"
+            >
+            <BsChevronDown />
+            </ExpandMore>
+        </CardActions>
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <CardContent>
+            <Typography paragraph>Summary:</Typography>
+            <Typography paragraph>This application is a sample web application for a online bank that allows users to view their accounts, make transactions, and open accounts. 
+            </Typography>
+            <Typography paragraph>Tools Used:</Typography>
+            <Typography paragraph>
+                Materials UI, MongoDB, ExpressJS, REACT, NodeJS, Apollo GraphQL, JWT Webtoken
+            </Typography>
+            </CardContent>
+        </Collapse>
+        </Card>
+        <br></br>
+        <br></br>
+        <br></br>
     </div>
   );
 }

@@ -17,6 +17,10 @@ body {
     background-color: var(--rod);
 }
 
+.banana {
+    margin-bottom: 200px;
+}
+
 /* Page Header */
 h1 {
     display: inline-block;
@@ -131,7 +135,7 @@ button {
 .abt,
 .cont {
     font-size: 25px;
-    color: var(--chi);
+    color: var(--bld);
     transition: all .2s ease-in-out;
 }
 
