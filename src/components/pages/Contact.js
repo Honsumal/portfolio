@@ -116,6 +116,9 @@ function Contact() {
             emailjs.init("4ZHfidS7IRAPGItnw")
         })();
       </script>
+      <br></br>
+      <br></br>
+      <br></br>
     </div>
   );
 }

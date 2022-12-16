@@ -1,12 +1,12 @@
 import React from "react";
 import {FaHtml5, FaCss3Alt, FaPython, FaNodeJs} from 'react-icons/fa'
 import {DiJavascript1, DiJqueryLogo, DiMaterializecss, DiReact, } from 'react-icons/di'
-import {SiHandlebarsdotjs, SiMaterialui, SiExpress, SiMysql, SiMongodb, SiAnsys, SiWolframmathematica, SiLabview} from 'react-icons/si'
+import {SiHandlebarsdotjs, SiMaterialui, SiExpress, SiMysql, SiMongodb, SiApollographql, SiAnsys, SiWolframmathematica, SiLabview} from 'react-icons/si'
 import {BsFillBootstrapFill} from 'react-icons/bs'
 
 const styles = {
     footer: {
-        background: "#a3320b",
+        background: "#6b0504",
         position: "fixed", 
         bottom: 0,
         width: '100%',
@@ -33,6 +33,7 @@ function LinkButtons() {
                     <li><a href='https://www.nodejs.org/'><FaNodeJs className = "node"/></a></li>
                     <li><a href='https://www.mysql.com/'><SiMysql className = "mysql"/></a></li>
                     <li><a href='https://www.mongodb.com/home'><SiMongodb className = "godb"/></a></li>
+                    <li><a href='https://www.apollographql.com/'><SiApollographql className = 'gql'/></a></li>
                     <li><a href='https://www.ansys.com/products/fluids/ansys-fluent'><SiAnsys className = "ansys"/></a></li>
                     <li><a href='https://www.wolfram.com/mathematica/'><SiWolframmathematica className = "math"/></a></li>
                     <li><a href='https://www.ni.com/en-ca/shop/labview.html'><SiLabview className = "labv"/></a></li>

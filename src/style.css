@@ -17,8 +17,8 @@ body {
     background-color: var(--rod);
 }
 
-.banana {
-    margin-bottom: 200px;
+.container{
+    background-color: var(--chi);
 }
 
 /* Page Header */
@@ -51,7 +51,8 @@ li {
 }
 
 a {
-   text-decoration: none; 
+   text-decoration: none;
+   color:var(--jun)
 }
 
 .centered {
@@ -122,7 +123,7 @@ button {
     margin-top: 2%;
 }
   
-.proj-box{
+.project{
 
     flex: 1 0 100%;
     padding: 10px;
@@ -162,6 +163,7 @@ button {
 .node,
 .mysql,
 .godb,
+.gql,
 .ansys,
 .math,
 .labv {
@@ -240,6 +242,11 @@ button {
     transform: scale(1.25);
 }
 
+.gql:hover {
+    color: #3f27ba;
+    transform:scale(1.25)
+}
+
 .ansys:hover {
     color:#f4ae25;
     transform: scale(1.25);
@@ -256,11 +263,7 @@ button {
 }
 
 /* Creates a glow around hovered project */
-.proj-box img:hover{
-    box-shadow: inset 0px 0px 8px var(--whi), 0 0 15px var(--whi);
-}
-
-.proj-box h3:hover {
+.project:hover{
     box-shadow: inset 0px 0px 8px var(--whi), 0 0 15px var(--whi);
 }
   
@@ -326,6 +329,7 @@ button {
     .node,
     .mysql,
     .godb,
+    .gql,
     .ansys,
     .math,
     .labv {
@@ -348,6 +352,7 @@ button {
     .node,
     .mysql,
     .godb,
+    .gql,
     .ansys,
     .math,
     .labv {
@@ -370,6 +375,7 @@ button {
     .node,
     .mysql,
     .godb,
+    .gql,
     .ansys,
     .math,
     .labv {
@@ -392,6 +398,7 @@ button {
     .node,
     .mysql,
     .godb,
+    .gql
     .ansys,
     .math,
     .labv {
