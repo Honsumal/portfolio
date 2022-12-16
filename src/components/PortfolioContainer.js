@@ -7,7 +7,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home'
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('About');
+  const [currentPage, setCurrentPage] = useState('Home');
 
 
   const renderPage = () => {
@@ -28,7 +28,7 @@ export default function PortfolioContainer() {
   return (
     <div>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      <div className = 'container'>
+      <div>
         {renderPage()}
       </div>
       <LinkButtons />

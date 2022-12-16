@@ -11,7 +11,7 @@ const styles = {
         position: "fixed", 
         bottom: 0,
         width: '100%',
-        height: '15%',
+        height: '10%',
         justifyContent: 'space-between'
     }
   }

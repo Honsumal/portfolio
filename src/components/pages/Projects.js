@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Projects() {
   return (
-    <div>
+    <div className = 'container'>
       <br></br>
       <h1 className='centered'>My Projects</h1>
       <br></br>
@@ -25,12 +25,6 @@ export default function Projects() {
                 <a href = "https://the-lending-station.herokuapp.com/"><img src={require('../../images/the-lending-station.png')} alt="the lending station" className = "norm"/></a>
                 <a href = "https://github.com/sashdc/the-lending-station"><h3>The Lending Station</h3></a>
                 <p>This application is a database for a library that allows librarians to keep track of, add, update, and delete books, users, and reviews from their database. Uses: JavaScript, NodeJS, ExpressJS, SQL</p>
-            </figure>
-            
-            <figure className = "proj-box">
-                <a href = "https://techjack.herokuapp.com/"><img src={require("../../images/tech-jack.png")} alt="tech jack" className = "norm"/></a>
-                <a href = "https://github.com/Honsumal/tech-blog"><h3>Tech Blog</h3></a>
-                <p>This application is a blog meant to include up-to-date information on tech news and related topics. Uses: JavaScript, NodeJS, ExpressJS, SQL</p>
             </figure>
 
             <figure className = "proj-box">
