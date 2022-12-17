@@ -1,23 +1,39 @@
-import React from 'react';
+import * as React from 'react';
+import Box from '@mui/material/Box';
 
-export default function About() {
+export default function Inline() {
   return (
-    <div>     
-      <div className='container'>
+    <div className = 'container' style={{ width: '100%' }}>
         <br></br>
-        <h1 className='centered'>About Me</h1>
-        <p>
-          Full Stack Web Developer with a background in Chemical Engineering. Recently obtained a certificate in Full Stack Development from a bootcamp from the University of Toronto, with skills in JavaScript, MySQL, MongoDB, and GraphQL. Known for being able to work flexibly as both a team member and team leader in a fast-paced group. Looking to join a company to leverage my current skills, grow my repertoire, and become a valuable asset. Primary language is English, with fluency in Cantonese and a background in Mandarin.
-        </p>
-        
-        <img src={require('../../images/Self.jpg')} alt = "self" className = "self"></img>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      </div>
-      
-
+        <h1 className='centered'>Contact Me</h1>
+        <p className = 'centered'>Please fill in the form below to contact me. Alternatively, click the link in the footer to be directed to your email app of choice.</p>
+      <Box
+        sx={{ 
+          display: 'flex', 
+          flexWrap: 'wrap', 
+          flexDirection: 'row',
+          justifyContent: 'space-evenly'}}>
+        <Box
+          component="div"
+          sx={{
+            display: 'inline',
+            p: 1,
+            m: 1,
+          }}
+        >
+          inline
+        </Box>
+        <Box
+          component="div"
+          sx={{
+            display: 'inline',
+            p: 1,
+            m: 1,
+          }}
+        >
+          inline
+        </Box>
+      </Box>
     </div>
   );
 }

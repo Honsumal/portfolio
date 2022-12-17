@@ -9,7 +9,6 @@ import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import PropTypes from 'prop-types';
 import { AiFillGithub } from 'react-icons/ai'
 import { HiDesktopComputer } from 'react-icons/hi'
 import { BsChevronDown } from 'react-icons/bs';
@@ -25,40 +24,6 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-function Item(props) {
-    const { sx, ...other } = props;
-    return (
-      <Box
-        sx={{
-          p: 1,
-          m: 1,
-          bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : 'grey.100'),
-          color: (theme) => (theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800'),
-          border: '1px solid',
-          borderColor: (theme) =>
-            theme.palette.mode === 'dark' ? 'grey.800' : 'grey.300',
-          borderRadius: 2,
-          fontSize: '0.875rem',
-          fontWeight: '700',
-          ...sx,
-        }}
-        {...other}
-      />
-    );
-  }
-  
-  Item.propTypes = {
-    /**
-     * The system prop that allows defining system overrides as well as additional CSS styles.
-     */
-    sx: PropTypes.oneOfType([
-      PropTypes.arrayOf(
-        PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.bool]),
-      ),
-      PropTypes.func,
-      PropTypes.object,
-    ]),
-  };
 
 export default function Projects() {
   const [expanded1, setExpanded1] = React.useState(false);
@@ -98,7 +63,7 @@ export default function Projects() {
   };
 
   return (
-    <div className = 'container banana'>
+    <div className = 'container'>
         <br></br>
         <h1 className='centered'>My Projects</h1>
         <br></br>
@@ -109,7 +74,8 @@ export default function Projects() {
             sx={{ 
                 display: 'flex', 
                 flexWrap: 'wrap', 
-                flexDirection: 'row'}}>
+                flexDirection: 'row',
+                justifyContent: 'space-evenly'}}>
 
             <Card sx={{ maxWidth: 345, m: 1 }} style = {{backgroundColor: "#e6af2e"}} className = 'project'>
             <CardHeader
@@ -209,7 +175,7 @@ export default function Projects() {
                 component="img"
                 height="150"
                 image={require("../../images/the-lending-station.png")}
-                alt="swiftbank landing"
+                alt="lending station landing"
                 sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
             />
             <CardContent >
@@ -254,7 +220,7 @@ export default function Projects() {
                 component="img"
                 height="150"
                 image={require("../../images/employee-tracker.png")}
-                alt="SNA"
+                alt="employee tracker demo"
                 sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
             />
             <CardContent >
@@ -299,7 +265,7 @@ export default function Projects() {
                 component="img"
                 height="150"
                 image={require("../../images/team-profile-builder.png")}
-                alt="swiftbank landing"
+                alt="builder demo"
                 sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
             />
             <CardContent >
@@ -344,7 +310,7 @@ export default function Projects() {
                 component="img"
                 height="150"
                 image={require("../../images/news-aggregator.png")}
-                alt="SNA"
+                alt="aggregator landing"
                 sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
             />
             <CardContent >
@@ -381,6 +347,7 @@ export default function Projects() {
             </Collapse>
             </Card>
         </Box>
+        <br></br>
         <br></br>
         <br></br>
         <br></br>

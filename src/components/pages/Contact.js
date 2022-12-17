@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Box from '@mui/material/Box'
 import { validateEmail } from '../../utils/helpers';
 import styled from "styled-components"
 import emailjs from '@emailjs/browser'
@@ -68,57 +69,84 @@ function Contact() {
   }
 
   return (
-    <div className = 'container'>
-      <br></br>
-      <h1 className='centered'>Contact Me</h1>
-      <p>Please fill in the form below to contact me. Alternatively, click the link in the footer to be directed to your email app of choice.</p>
-      <form className="form">
-        <h4>Email</h4>
-        <Input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="Your Email"
-          size = '0.5em'
-        />
-        <h4>Your Name</h4>
-        <Input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Your Name"
-          size = '0.5em'
-        />
-        <h4>Email Message</h4>
-        <MessageInput
-          value = {message}
-          name = 'message'
-          onChange={handleInputChange}
-          type="message"
-          placeholder = "Email Message"
-          rows = {5}
-          size = '5em'
-        />
+    <div className = 'container' style={{ width: '100%' }}>
+        <br></br>
+        <h1 className='centered'>Contact Me</h1>
+        <p className = 'centered'>Please fill in the form below to contact me. Alternatively, use one of the contact options on the right to reach me.</p>
+      <Box
+        style = {{width: ''}}
+        sx={{ 
+          display: 'flex', 
+          flexWrap: 'wrap', 
+          flexDirection: 'row',
+          justifyContent: 'space-evenly'}}>
+        <Box
+          component="div"
+          sx={{
+            display: 'inline',
+            width: '40%',
+            p: 1,
+            m: 1,
+          }}
+        >
+          <form className="form">
+            <h4>Email</h4>
+            <Input
+              value={email}
+              name="email"
+              onChange={handleInputChange}
+              type="email"
+              placeholder="Your Email"
+              size = '0.5em'
+            />
+            <h4>Your Name</h4>
+            <Input
+              value={name}
+              name="name"
+              onChange={handleInputChange}
+              type="text"
+              placeholder="Your Name"
+              size = '0.5em'
+            />
+            <h4>Email Message</h4>
+            <MessageInput
+              value = {message}
+              name = 'message'
+              onChange={handleInputChange}
+              type="message"
+              placeholder = "Email Message"
+              rows = {5}
+              size = '100'
+            />
 
-        <button onClick={handleFormSubmit}>
-          Send
-        </button>
-      </form>
-      {errMessage && (
-        <div>
-          <p className="error-text">{errMessage}</p>
-        </div>
-      )}
-      <script type="text/javascript">
-        (function(){
-            emailjs.init("4ZHfidS7IRAPGItnw")
-        })();
-      </script>
-      <br></br>
-      <br></br>
-      <br></br>
+            <button onClick={handleFormSubmit}>
+              Send
+            </button>
+          </form>
+          {errMessage && (
+            <div>
+              <p className="error-text">{errMessage}</p>
+            </div>
+          )}
+          <script type="text/javascript">
+            (function(){
+                emailjs.init("4ZHfidS7IRAPGItnw")
+            })();
+          </script>
+        </Box>
+        <Box
+          component="div"
+          sx={{
+            display: 'inline',
+            p: 1,
+            m: 1,
+          }}
+        >
+          <h4> Email:</h4>
+          <p>14leealastair@gmail.com</p>
+          
+        </Box>
+      </Box>
     </div>
   );
 }
