@@ -106,7 +106,6 @@ button {
 /* Image Rules */
 .self {
     height: 300px;
-    margin-left: 23%    
 }
   
 .norm {
@@ -282,10 +281,6 @@ button {
         margin-top:0px;
     }
 
-    .self {
-        margin-left: 35%;
-    }
-
     .proj-box{
       flex: 0 0 50%;
       max-width: 50%;
@@ -304,10 +299,6 @@ button {
         font-size: 36px;
     }
 
-    .self {
-        margin-left: 42%;
-    }
-    
     .proj-box{
       flex: 0 0 33%;
       max-width: 33%;

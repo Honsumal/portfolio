@@ -13,7 +13,7 @@ const Input = styled.input`
 `;
 
 const MessageInput = styled.textarea`
-  width: 50%
+  width: 70%
 `
 
 function Contact() {
@@ -74,7 +74,6 @@ function Contact() {
         <h1 className='centered'>Contact Me</h1>
         <p className = 'centered'>Please fill in the form below to contact me. Alternatively, use one of the contact options on the right to reach me.</p>
       <Box
-        style = {{width: ''}}
         sx={{ 
           display: 'flex', 
           flexWrap: 'wrap', 
@@ -123,16 +122,7 @@ function Contact() {
               Send
             </button>
           </form>
-          {errMessage && (
-            <div>
-              <p className="error-text">{errMessage}</p>
-            </div>
-          )}
-          <script type="text/javascript">
-            (function(){
-                emailjs.init("4ZHfidS7IRAPGItnw")
-            })();
-          </script>
+          
         </Box>
         <Box
           component="div"
@@ -142,11 +132,34 @@ function Contact() {
             m: 1,
           }}
         >
-          <h4> Email:</h4>
-          <p>14leealastair@gmail.com</p>
+          <h4>Phone: </h4>
+          <p>+1 (437) 329-8318</p>
+
+          <h4>Email:</h4>
+          <a href='mailto:14leealastair@gmail.com'>14leealastair@gmail.com</a>
+
+          <h4>LinkedIn</h4>
+            <a href='https://www.linkedin.com/in/hon-sum-alastair-lee/'>https://www.linkedin.com/in/hon-sum-alastair-lee/</a>
+
+          <h4> Stack Overflow </h4>
+            <a href='https://stackoverflow.com/users/20526502/honsumal'>https://stackoverflow.com/users/20526502/honsumal</a>
+
           
         </Box>
       </Box>
+
+      <br></br>
+      <br></br>
+      {errMessage && (
+        <div>
+          <p className="error-text">{errMessage}</p>
+        </div>
+      )}
+      <script type="text/javascript">
+        (function(){
+            emailjs.init("4ZHfidS7IRAPGItnw")
+        })();
+      </script>
     </div>
   );
 }
