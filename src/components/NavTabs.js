@@ -7,7 +7,7 @@ import {MdEmail} from 'react-icons/md'
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-tabs">
-        <li><h1>Alastair Lee</h1></li>
+        <li><h1 className='headline'>Alastair Lee</h1></li>
         <li className="nav-item">
         <a
           href="#home"

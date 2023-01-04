@@ -40,7 +40,7 @@ export default function Resume() {
           <li style={{display: 'block'}}>Design Modeler</li>
           <li style={{display: 'block'}}>Siemens NX</li>
         </ul>
-      <h4>Spoken Languages</h4>
+      <h4>Language Skills</h4>
         <ul>
           <li style={{display: 'block'}}>Cantonese</li>
           <li style={{display: 'block'}}>Mandarin</li>

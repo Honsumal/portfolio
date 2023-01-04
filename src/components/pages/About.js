@@ -9,8 +9,7 @@ import { BsChevronDown } from 'react-icons/bs';
 export default function About() {
   return (
     <div>
-      <br></br>
-      
+     
       <div className='container'>
         <br></br>
         <h1 className='centered'>About Me</h1>
@@ -90,6 +89,11 @@ export default function About() {
                         <li style={{display: 'block'}}>Space Claim</li>
                         <li style={{display: 'block'}}>Design Modeler</li>
                         <li style={{display: 'block'}}>Siemens NX</li>
+                      </ul>
+                    <h4>Language Skills</h4>
+                      <ul>
+                        <li style={{display: 'block'}}>Cantonese</li>
+                        <li style={{display: 'block'}}>Mandarin</li>
                       </ul>
                     </Typography>
                   </AccordionDetails>
