@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.233f5c59.css",
-    "main.js": "/portfolio/static/js/main.4e1f9517.js",
+    "main.css": "/portfolio/static/css/main.a4d84f1c.css",
+    "main.js": "/portfolio/static/js/main.459c5a3a.js",
     "static/media/banner1.jpg": "/portfolio/static/media/banner1.aaa7c61ebe1d54ee7b37.jpg",
     "static/media/Self.jpg": "/portfolio/static/media/Self.7e384e7558ddb8305411.jpg",
     "static/media/the-lending-station.png": "/portfolio/static/media/the-lending-station.2727ea28c02c8559a3da.png",
@@ -12,11 +12,11 @@
     "static/media/swift.png": "/portfolio/static/media/swift.6440db3897bc2f5d84c5.png",
     "static/media/team-profile-builder.png": "/portfolio/static/media/team-profile-builder.0bb41fb8f8c8e8eca4e4.png",
     "index.html": "/portfolio/index.html",
-    "main.233f5c59.css.map": "/portfolio/static/css/main.233f5c59.css.map",
-    "main.4e1f9517.js.map": "/portfolio/static/js/main.4e1f9517.js.map"
+    "main.a4d84f1c.css.map": "/portfolio/static/css/main.a4d84f1c.css.map",
+    "main.459c5a3a.js.map": "/portfolio/static/js/main.459c5a3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.233f5c59.css",
-    "static/js/main.4e1f9517.js"
+    "static/css/main.a4d84f1c.css",
+    "static/js/main.459c5a3a.js"
   ]
 }
