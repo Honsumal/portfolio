@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a4e6f1be.css",
-    "main.js": "/portfolio/static/js/main.3d94dbb2.js",
+    "main.js": "/portfolio/static/js/main.66c43d69.js",
     "static/media/banner1.jpg": "/portfolio/static/media/banner1.aaa7c61ebe1d54ee7b37.jpg",
     "static/media/Self.jpg": "/portfolio/static/media/Self.7e384e7558ddb8305411.jpg",
     "static/media/the-lending-station.png": "/portfolio/static/media/the-lending-station.2727ea28c02c8559a3da.png",
@@ -10,13 +10,13 @@
     "static/media/Alastair Lee's Resume - Webdev.pdf": "/portfolio/static/media/Alastair Lee's Resume - Webdev.c91fee9194bd125a18bc.pdf",
     "static/media/employee-tracker.png": "/portfolio/static/media/employee-tracker.61cb830b24af5986a848.png",
     "static/media/swift.png": "/portfolio/static/media/swift.6440db3897bc2f5d84c5.png",
-    "static/media/team-profile-builder.png": "/portfolio/static/media/team-profile-builder.0bb41fb8f8c8e8eca4e4.png",
+    "static/media/gpc.png": "/portfolio/static/media/gpc.f085d7fe8653e7ef4a77.png",
     "index.html": "/portfolio/index.html",
     "main.a4e6f1be.css.map": "/portfolio/static/css/main.a4e6f1be.css.map",
-    "main.3d94dbb2.js.map": "/portfolio/static/js/main.3d94dbb2.js.map"
+    "main.66c43d69.js.map": "/portfolio/static/js/main.66c43d69.js.map"
   },
   "entrypoints": [
     "static/css/main.a4e6f1be.css",
-    "static/js/main.3d94dbb2.js"
+    "static/js/main.66c43d69.js"
   ]
 }
