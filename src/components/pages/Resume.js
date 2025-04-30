@@ -5,10 +5,10 @@ export default function Resume() {
     <div>
       <br></br>
       <h1 className='centered'>Resume</h1>
-      <h3>Download my resume using the following link</h3>
+      <h3>Download my resume using the following link:</h3>
       <a href = {require('../../files/Alastair Lee\'s Resume - Webdev.pdf')} className='resume'>Resume</a>
 
-      <h3>Full List of Technical Skills</h3>
+      <h3>Full List of Technical Skills:</h3>
       <h4>Front End Development</h4>
         <ul>
           <li style={{display: 'block'}}>JavaScript ES6+</li>

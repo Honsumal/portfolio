@@ -76,6 +76,96 @@ export default function Projects() {
                 flexWrap: 'wrap', 
                 flexDirection: 'row',
                 justifyContent: 'space-evenly'}}>
+        
+        <Card sx={{ maxWidth: 345, m: 1 }} style = {{backgroundColor: "#e6af2e"}} className = 'project'>
+            <CardHeader
+                title="The Plunge Game"
+            />
+            <CardMedia
+                component="img"
+                height="150"
+                image={require("../../images/plunge.png")}
+                alt="employee tracker demo"
+                sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
+            />
+            <CardContent >
+                <Typography variant="body2" color="#001514">
+                    Turn-based combat game made using Javascript
+                </Typography>
+            </CardContent>
+            <CardActions disableSpacing>
+                <IconButton aria-label='demo'>
+                    <a href = "https://honsumal.github.io/plunge-game/"><HiDesktopComputer /> Link </a>
+                </IconButton>
+                <IconButton aria-label='github'>
+                    <a href = "https://github.com/Honsumal/plunge-game"><AiFillGithub /> Github </a>
+                </IconButton>
+                <ExpandMore
+                expand={expanded4}
+                onClick={handleExpandClick4}
+                aria-expanded={expanded4}
+                aria-label="show more"
+                >
+                <BsChevronDown />
+                </ExpandMore>
+            </CardActions>
+            <Collapse in={expanded4} timeout="auto" unmountOnExit>
+                <CardContent>
+                <Typography paragraph>Summary:</Typography>
+                <Typography paragraph>This application is a turn-based combat game built using javascript, where a user controls three characters to fight a set of ten opponents of increasing difficulty.
+                </Typography>
+                <Typography paragraph>Tools Used:</Typography>
+                <Typography paragraph>
+                Javascript, React, MUI, Object Oriented Programming
+                </Typography>
+                </CardContent>
+            </Collapse>
+            </Card>
+
+        <Card sx={{ maxWidth: 345, m: 1 }} style = {{backgroundColor: "#e6af2e"}} className = 'project'>
+            <CardHeader
+                title="Gacha Probability Calculator"
+            />
+            <CardMedia
+                component="img"
+                height="150"
+                image={require("../../images/gpc.png")}
+                alt="builder demo"
+                sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
+            />
+            <CardContent >
+                <Typography variant="body2" color="#001514">
+                    Simple Probability Calculator
+                </Typography>
+            </CardContent>
+            <CardActions disableSpacing>
+                <IconButton aria-label='demo'>
+                    <a href = "https://honsumal.github.io/probability-calculator/"><HiDesktopComputer /> Link </a>
+                </IconButton>
+                <IconButton aria-label='github'>
+                    <a href = "https://github.com/Honsumal/probability-calculator"><AiFillGithub /> Github </a>
+                </IconButton>
+                <ExpandMore
+                expand={expanded5}
+                onClick={handleExpandClick5}
+                aria-expanded={expanded5}
+                aria-label="show more"
+                >
+                <BsChevronDown />
+                </ExpandMore>
+            </CardActions>
+            <Collapse in={expanded5} timeout="auto" unmountOnExit>
+                <CardContent>
+                <Typography paragraph>Summary:</Typography>
+                <Typography paragraph>This application is an easy-to-use probability calculator that simulates large iterations of independent events with the same probability.
+                </Typography>
+                <Typography paragraph>Tools Used:</Typography>
+                <Typography paragraph>
+                    Material UI, REACT, JavaScript, BootStrap
+                </Typography>
+                </CardContent>
+            </Collapse>
+            </Card>
 
             <Card sx={{ maxWidth: 345, m: 1 }} style = {{backgroundColor: "#e6af2e"}} className = 'project'>
             <CardHeader
@@ -116,7 +206,7 @@ export default function Projects() {
                 </Typography>
                 <Typography paragraph>Tools Used:</Typography>
                 <Typography paragraph>
-                    Material UI, MongoDB, ExpressJS, REACT, NodeJS, Apollo GraphQL, JWT Webtoken
+                    Material UI, MongoDB, ExpressJS, REACT, NodeJS, Apollo GraphQL, BootStrap, JWT Webtoken
                 </Typography>
                 </CardContent>
             </Collapse>
@@ -207,96 +297,6 @@ export default function Projects() {
                 <Typography paragraph>Tools Used:</Typography>
                 <Typography paragraph>
                     JavaScript, NodeJS, ExpressJS, MySQL, Handlebars, Bootstrap
-                </Typography>
-                </CardContent>
-            </Collapse>
-            </Card>
-
-            <Card sx={{ maxWidth: 345, m: 1 }} style = {{backgroundColor: "#e6af2e"}} className = 'project'>
-            <CardHeader
-                title="Employee Tracker"
-            />
-            <CardMedia
-                component="img"
-                height="150"
-                image={require("../../images/employee-tracker.png")}
-                alt="employee tracker demo"
-                sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
-            />
-            <CardContent >
-                <Typography variant="body2" color="#001514">
-                    CLI-based employee database builder
-                </Typography>
-            </CardContent>
-            <CardActions disableSpacing>
-                <IconButton aria-label='demo'>
-                    <a href = "https://watch.screencastify.com/v/LVd0GtJUy0PuEuUu1VaB"><HiDesktopComputer /> Demo </a>
-                </IconButton>
-                <IconButton aria-label='github'>
-                    <a href = "https://github.com/Honsumal/employee-tracker"><AiFillGithub /> Github </a>
-                </IconButton>
-                <ExpandMore
-                expand={expanded4}
-                onClick={handleExpandClick4}
-                aria-expanded={expanded4}
-                aria-label="show more"
-                >
-                <BsChevronDown />
-                </ExpandMore>
-            </CardActions>
-            <Collapse in={expanded4} timeout="auto" unmountOnExit>
-                <CardContent>
-                <Typography paragraph>Summary:</Typography>
-                <Typography paragraph>This application is an employee tracker that runs through the CLI and uses user input to create a database that stores all the important information about each employee, role, and department in a company.
-                </Typography>
-                <Typography paragraph>Tools Used:</Typography>
-                <Typography paragraph>
-                JavaScript, NodeJS, SQL
-                </Typography>
-                </CardContent>
-            </Collapse>
-            </Card>
-
-            <Card sx={{ maxWidth: 345, m: 1 }} style = {{backgroundColor: "#e6af2e"}} className = 'project'>
-            <CardHeader
-                title="Team Profile Generator"
-            />
-            <CardMedia
-                component="img"
-                height="150"
-                image={require("../../images/team-profile-builder.png")}
-                alt="builder demo"
-                sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
-            />
-            <CardContent >
-                <Typography variant="body2" color="#001514">
-                    CLI-based team profile builder
-                </Typography>
-            </CardContent>
-            <CardActions disableSpacing>
-                <IconButton aria-label='demo'>
-                    <a href = "https://watch.screencastify.com/v/ojpaj8rfCts8mFlTCT4F"><HiDesktopComputer /> Demo </a>
-                </IconButton>
-                <IconButton aria-label='github'>
-                    <a href = "https://github.com/Honsumal/team-profile-generator"><AiFillGithub /> Github </a>
-                </IconButton>
-                <ExpandMore
-                expand={expanded5}
-                onClick={handleExpandClick5}
-                aria-expanded={expanded5}
-                aria-label="show more"
-                >
-                <BsChevronDown />
-                </ExpandMore>
-            </CardActions>
-            <Collapse in={expanded5} timeout="auto" unmountOnExit>
-                <CardContent>
-                <Typography paragraph>Summary:</Typography>
-                <Typography paragraph>This application is a team profile generator that works from the command line. Using user input, it creates short profiles of employees with their name, ID, and email.
-                </Typography>
-                <Typography paragraph>Tools Used:</Typography>
-                <Typography paragraph>
-                    JavaScript, NodeJS
                 </Typography>
                 </CardContent>
             </Collapse>

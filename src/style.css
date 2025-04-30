@@ -3,11 +3,11 @@
     --myr:#fbfffe;
     --ora:#6b0504;
     --mxr:#a3320b;
-    --rod:#e6af2e;
+    --prs:#e6af2e;
 } */
 
 :root{
-    --rod:#003049;
+    --prs:#003049;
     --mxr:#d62828;
     --ora:#f77f00;
     --myr:#fcbf49;
@@ -22,7 +22,7 @@
 }
 
 body {
-    background-color: var(--rod);
+    background-color: var(--prs);
 }
 
 .container{
@@ -41,6 +41,7 @@ h2 {
     margin-bottom: 20px;
     font-size: 16px;
     text-align: left;
+    color: var(--prs)
 }
 
 /* Project Labels */
@@ -179,7 +180,7 @@ button {
 .math,
 .labv {
     font-size: 12.5px;
-    color: var(--lmm);
+    color: var(--myr);
     transition: all .2s ease-in-out;
 }
 
@@ -194,7 +195,7 @@ button {
 }
 
 .js:hover {
-    color: myrte;
+    color: white;
     transform: scale(1.25);
 }
 
@@ -249,7 +250,7 @@ button {
 }
 
 .godb:hover {
-    color:#023430;
+    color:#116149;
     transform: scale(1.25);
 }
 

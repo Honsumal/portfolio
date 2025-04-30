@@ -6,7 +6,7 @@ import {BsFillBootstrapFill} from 'react-icons/bs'
 
 const styles = {
     footer: {
-        background: "#6b0504",
+        background: "#003049",
         position: "fixed", 
         bottom: 0,
         width: '100%',
